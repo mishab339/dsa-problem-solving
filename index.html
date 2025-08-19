@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="" id="identity">
+    <ul id="list">
+      <li>mishab</li>
+      <li>muhammed</li>
+    </ul>
+    <button onclick="addChilde()">add</button>
+    <script>
+      function addChilde() {
+        let identity = document.getElementById("identity").value;
+        let list = document.createElement("li");
+        let text = document.createTextNode(identity);
+        list.appendChild(text);
+        document.getElementById("list").appendChild(list);
+      }
+    </script>
+  </body>
+</html>
